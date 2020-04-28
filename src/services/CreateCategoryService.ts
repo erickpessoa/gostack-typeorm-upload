@@ -27,7 +27,6 @@ class CreateCategoryService {
       category = this.categoriesRepository.create({ title });
       await this.categoriesRepository.save(category);
     }
-
     return category;
   }
 }
